@@ -1,0 +1,27 @@
+h1. Every
+
+Periodical execute block code
+
+<pre><code>
+
+require 'every'
+
+loop do
+   every 5.seconds do
+      puts "Executed: #{Time.now}"
+   end
+   
+   sleep 1
+   
+end
+
+
+</code></pre>
+
+<pre><code>
+and script output:
+
+Executed: Sun Jan 31 22:56:21 +0100 2010
+Executed: Sun Jan 31 22:56:27 +0100 2010
+Executed: Sun Jan 31 22:56:33 +0100 2010
+</code></pre>

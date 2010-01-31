@@ -3,9 +3,10 @@
 require 'every'
 
 loop do
-    every 5.seconds, :title => "Oko" do
-        puts "Odpalony: #{Time.now}"
-    end
-
-    sleep 1
+   every 5.seconds do
+      puts "Executed: #{Time.now}"
+   end
+   
+   sleep 1
+   
 end
